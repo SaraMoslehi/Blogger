@@ -62,21 +62,27 @@ switch($section){
 
 if(@$_SESSION['admin']){
 	$smarty->assign('admin', $_SESSION['admin']);
+	$permissions = $db->getRow("SELECT * FROM xxadmin NATURAL LEFT JOIN xxpermissions WHERE xusername = '$_SESSION[admin]'");
+	$permission=$permissions["xpermission"];
 	//********* getting adminid  ***********
 	$admin   = $_SESSION['admin'];
-	$filter = ['username' => $admin];
-	$options = [
-		'projection' => ['user_name' => 1 , 'user_family' => 1]
-	];
-	$query = new MongoDB\Driver\Query($filter, $options);
-	$user = $manager->executeQuery('BloggerDB.users', $query);
-	foreach($user as $ef){
-	}
-	echo $esmfamil = $ef->user_name." ".$ef->user_family;
-	//$famil = $ef->family;
-	//$famil = $admin['xadminfamily'];
+	$sql     = "SELECT * FROM xxadmin WHERE xusername = '$admin'";
+	$admin   = $db->getRow($sql);
+	$adminid = $admin['xadminid'];
+	$esm = $admin['xadminname'];
+	$famil = $admin['xadminfamily'];
+	$sex = $admin['xsex'];
+	if ($sex=='مرد') $esmfamil="آقای ".$esm." ".$famil;
+	else $esmfamil="خانم ".$esm." ".$famil;
 	$smarty->assign('esmfamil', @$esmfamil);
 	//************************************** 
+	$sql="SELECT * FROM xxerja 
+		  LEFT JOIN xxmodule ON xxmodule.xmoduleid=xxerja.xerjamoduleid
+		  LEFT JOIN xxadmin ON xxadmin.xadminid=xxerja.xerjaadminid
+		  WHERE xxmodule.xmoduleheading='$module' AND xxerja.xerjareceiverid='$adminid' AND xxerja.xerjaformid='$id'";
+	$erja=$db->getRow($sql);
+	if((strpos($permission, $module) === false && $section == 'adm')&& !$erja ){ redirect("index.php?option=adm_permission");}
+	$smarty->assign('permission', @$permission);
 }
 
 if(file_exists("$dir/$module.php")) {
