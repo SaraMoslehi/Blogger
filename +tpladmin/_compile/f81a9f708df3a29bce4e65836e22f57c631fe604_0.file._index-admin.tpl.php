@@ -1,10 +1,45 @@
+<?php /* Smarty version 3.1.27, created on 2018-02-10 15:18:22
+         compiled from "+tpladmin\_index-admin.tpl" */ ?>
+<?php
+/*%%SmartyHeaderCode:19104175685a7eff2e4b37f8_45001392%%*/
+if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'f81a9f708df3a29bce4e65836e22f57c631fe604' => 
+    array (
+      0 => '+tpladmin\\_index-admin.tpl',
+      1 => 1518272301,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '19104175685a7eff2e4b37f8_45001392',
+  'variables' => 
+  array (
+    'tplModule' => 0,
+    'URL' => 0,
+    'esmfamil' => 0,
+    'title' => 0,
+  ),
+  'has_nocache_code' => false,
+  'version' => '3.1.27',
+  'unifunc' => 'content_5a7eff2e4f4393_08886880',
+),false);
+/*/%%SmartyHeaderCode%%*/
+if ($_valid && !is_callable('content_5a7eff2e4f4393_08886880')) {
+function content_5a7eff2e4f4393_08886880 ($_smarty_tpl) {
+
+$_smarty_tpl->properties['nocache_hash'] = '19104175685a7eff2e4b37f8_45001392';
+?>
 <!doctype html>
 <html>
 <head>
-    {include file="_head.tpl"}
+    <?php echo $_smarty_tpl->getSubTemplate ("_head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0);
+?>
+
 </head>
 <body class="main">
-{if $tplModule ne '_login.tpl'}
+<?php if ($_smarty_tpl->tpl_vars['tplModule']->value != '_login.tpl') {?>
 <div id="throbber" style="display:none; min-height:120px;"></div>
 <div id="noty-holder"></div>
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -16,9 +51,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="{$URL}">
+        <a class="navbar-brand" href="<?php echo $_smarty_tpl->tpl_vars['URL']->value;?>
+">
         <span>
-            <img src="{$URL}/images/admin/Blogger.jpg" alt="LOGO" width="100px" />
+            <img src="<?php echo $_smarty_tpl->tpl_vars['URL']->value;?>
+/images/admin/Blogger.jpg" alt="LOGO" width="100px" />
             سامانه مدیریت BMS Blogger
         </span>
         </a>
@@ -29,9 +66,11 @@
             </a>
         </li>            
 -->            <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">{$esmfamil} <b class="fa fa-angle-down"></b></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_smarty_tpl->tpl_vars['esmfamil']->value;?>
+ <b class="fa fa-angle-down"></b></a>
             <ul class="dropdown-menu">
-                <li><a href="{$URL}/index.php?option=adm_adminpersonaledit"><i class="fa fa-fw fa-user"></i> ویرایش</a></li>
+                <li><a href="<?php echo $_smarty_tpl->tpl_vars['URL']->value;?>
+/index.php?option=adm_adminpersonaledit"><i class="fa fa-fw fa-user"></i> ویرایش</a></li>
                 <li><a href="#"><i class="fa fa-fw fa-cog"></i> تغییر پسورد</a></li>
                 <li class="divider"></li>
                 <li><a href="index.php?option=adm_login&logout=1"><i class="fa fa-fw fa-power-off"></i> خروج</a></li>
@@ -71,9 +110,12 @@
             <!-- Page Heading -->
             <div class="row" id="main" >
                 <div class="col-sm-12 col-md-12 well" id="content">
-	                <h1 style="text-align:center">{$title}</h1>
-                    {if $URL eq "http://localhost/avvalmoshaver"}دسترسی لوكال {/if}
-                    {include file=$tplModule}
+	                <h1 style="text-align:center"><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+</h1>
+                    <?php if ($_smarty_tpl->tpl_vars['URL']->value == "http://localhost/avvalmoshaver") {?>دسترسی لوكال <?php }?>
+                    <?php echo $_smarty_tpl->getSubTemplate ($_smarty_tpl->tpl_vars['tplModule']->value, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0);
+?>
+
                 </div>
             </div>
             <!-- /.row -->
@@ -82,7 +124,8 @@
     </div>
     <!-- /#page-wrapper -->
 </div><!-- /#wrapper -->
-<script>
+<?php echo '<script'; ?>
+>
 $(function(){
     $('[data-toggle="tooltip"]').tooltip();
     $(".side-nav .collapse").on("hide.bs.collapse", function() {                   
@@ -92,10 +135,16 @@ $(function(){
         $(this).prev().find(".fa").eq(1).removeClass("fa-angle-down").addClass("fa-angle-left");        
     });
 })    
-</script>    
+<?php echo '</script'; ?>
+>    
 
-{else}
-	{include file=$tplModule}
-{/if}
+<?php } else { ?>
+	<?php echo $_smarty_tpl->getSubTemplate ($_smarty_tpl->tpl_vars['tplModule']->value, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0);
+?>
+
+<?php }?>
 </body>
 </html>
+<?php }
+}
+?>
