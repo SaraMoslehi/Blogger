@@ -1,0 +1,18 @@
+#thumbBox
+{
+	max-width:100%;
+	PADDING-RIGHT:10px;
+	PADDING-LEFT:10px;
+	Z-INDEX:10000;
+	BACKGROUND:#313131;
+	LEFT:0px;
+	VISIBILITY:hidden;
+	PADDING-BOTTOM:0px;
+	CURSOR:pointer;
+	PADDING-TOP:10px;
+	POSITION:absolute;
+	TOP:0px;
+}
+#thumbBox .footerbar{PADDING-RIGHT:0px;PADDING-LEFT:0px;PADDING-BOTTOM:5px;FONT:bold 16px/1.1em Tahoma;COLOR:white;PADDING-TOP:5px;LETTER-SPACING:5px;TEXT-ALIGN:right;max-width:100%}
+#thumbBox #thumbImage{BACKGROUND-COLOR:white;max-width:100%}
+#thumbLoading{BORDER-RIGHT:black 1px solid;PADDING-RIGHT:5px;BORDER-TOP:black 1px solid;PADDING-LEFT:5px;Z-INDEX:5;VISIBILITY:hidden;PADDING-BOTTOM:5px;BORDER-LEFT:black 1px solid;PADDING-TOP:5px;BORDER-BOTTOM:black 1px solid;POSITION:absolute;BACKGROUND-COLOR:#efefef}
