@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2018-02-10 08:02:00
+<?php /* Smarty version 3.1.27, created on 2018-02-11 18:55:43
          compiled from "+tplpublic\_head1.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:14544019625a7e98e8436b19_16722372%%*/
+/*%%SmartyHeaderCode:14210942675a80839f4e32c8_85686479%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '32237c010f65caba86bee215b6f28f861bd4835c' => 
     array (
       0 => '+tplpublic\\_head1.tpl',
-      1 => 1518245264,
+      1 => 1518298667,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '14544019625a7e98e8436b19_16722372',
+  'nocache_hash' => '14210942675a80839f4e32c8_85686479',
   'variables' => 
   array (
     'title' => 0,
@@ -22,13 +22,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5a7e98e849d952_66495725',
+  'unifunc' => 'content_5a80839f4eb420_84958678',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5a7e98e849d952_66495725')) {
-function content_5a7e98e849d952_66495725 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5a80839f4eb420_84958678')) {
+function content_5a80839f4eb420_84958678 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '14544019625a7e98e8436b19_16722372';
+$_smarty_tpl->properties['nocache_hash'] = '14210942675a80839f4e32c8_85686479';
 ?>
 <meta charset="utf-8">
 <title>BMS Blogger - <?php echo $_smarty_tpl->tpl_vars['title']->value;?>

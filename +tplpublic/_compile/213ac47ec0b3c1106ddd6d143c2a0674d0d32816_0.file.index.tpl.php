@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2018-02-10 08:01:59
+<?php /* Smarty version 3.1.27, created on 2018-02-11 18:55:43
          compiled from "+tplpublic\index.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:15683144165a7e98e7ca9870_97263373%%*/
+/*%%SmartyHeaderCode:7025397835a80839f3f37d4_74662235%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,20 +9,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '213ac47ec0b3c1106ddd6d143c2a0674d0d32816' => 
     array (
       0 => '+tplpublic\\index.tpl',
-      1 => 1518245264,
+      1 => 1518371417,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '15683144165a7e98e7ca9870_97263373',
+  'nocache_hash' => '7025397835a80839f3f37d4_74662235',
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5a7e98e8254dd2_06879506',
+  'unifunc' => 'content_5a80839f44ea55_79326020',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5a7e98e8254dd2_06879506')) {
-function content_5a7e98e8254dd2_06879506 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5a80839f44ea55_79326020')) {
+function content_5a80839f44ea55_79326020 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '15683144165a7e98e7ca9870_97263373';
+$_smarty_tpl->properties['nocache_hash'] = '7025397835a80839f3f37d4_74662235';
 ?>
 <!DOCTYPE html>
 <html lang="fa-IR" dir="rtl">
@@ -110,11 +110,11 @@ $_smarty_tpl->properties['nocache_hash'] = '15683144165a7e98e7ca9870_97263373';
             </div>
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                 <h3>مرجان پوست زاده</h3>
-                شماره دانشجویی: 96242243
+                شماره دانشجویی: 96242234
             </div>
             <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                 <h3>سارا مصلحی</h3>
-                شماره دانشجویی: 96242243
+                شماره دانشجویی: 96242945
             </div>
             <div class="hidden-xs hidden-sm col-md-1 col-lg-1">
             </div>

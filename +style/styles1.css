@@ -18,41 +18,11 @@
 body{
     font-family: "BISL",Tahoma,Helvetica,Arial,sans-serif;
 }
+
 .hide{
 	display:none;
 }
-.galleryimg
-{
-	padding:15px;
-	cursor:url(../images/admin/magnify.cur), pointer;
-}
-.aboutus-con
-{
-	background:linear-gradient(to bottom,  #1a5493 0%,#1a5493 30%,#f5f5f5 30%,#f5f5f5 100%);
-}
-.aboutus-row > h2
-{
-	color:white;
-	margin-right:40px;
-}
-.aboutus-panel
-{
-	margin:25px;
-}
-.departments-con
-{
-	background-color:#f9b7a3;
-}
-.departments-row > h2
-{
-	color:#1a5493;
-	margin-right:40px;
-	margin-bottom:25px;
-}
-.deptext
-{
-	text-align:center;
-}
+
 .gallery-con
 {
 	background:linear-gradient(to bottom,  #1a5493 0%,#1a5493 85%,#f16136 85%,#f16136 100%);
@@ -197,7 +167,7 @@ body{
 .contactus-form
 {
 	border:none;
-	direction:ltr;
+	direction:rtl;
 }
 
 .contactus-input
@@ -206,7 +176,7 @@ body{
     font-size: 16px;
 	color:#1a5493;
 	border-bottom:white solid 1px;
-	direction:ltr;
+	direction:rtl;
 	margin-bottom:30px;
 }
 .contactus-input::-moz-placeholder
