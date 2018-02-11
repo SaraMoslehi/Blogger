@@ -77,11 +77,11 @@
             </div>
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                 <h3>مرجان پوست زاده</h3>
-                شماره دانشجویی: 96242243
+                شماره دانشجویی: 96242234
             </div>
             <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                 <h3>سارا مصلحی</h3>
-                شماره دانشجویی: 96242243
+                شماره دانشجویی: 96242945
             </div>
             <div class="hidden-xs hidden-sm col-md-1 col-lg-1">
             </div>
