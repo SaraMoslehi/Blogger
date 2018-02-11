@@ -30,7 +30,7 @@ if(strlen($Passw)>12)
 if(strlen($Passw) <7)
 	$PassLenght="کوتاه";
 elseif($strength<2)
-	$PassLenght="صعیف";
+	$PassLenght="ضعیف";
 elseif($strength==2)
 	$PassLenght="خوب";
 elseif($strength==3 || $strength==4)
