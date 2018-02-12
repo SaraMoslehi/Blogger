@@ -10,14 +10,14 @@ if(($_SERVER['REMOTE_ADDR'] == '127.0.0.1')||($_SERVER['REMOTE_ADDR'] == '::1'))
 	$dbname = 'BloggerDB';
 	define("URL","http://localhost/blogger");
 }
-/*else{
+else{
 	$user 	= 'BMS';
 	$pass 	= 'BMS123';
 	$host 	= 'localhost';
 	$port	= '27017';
 	$dbname	= 'BloggerDB';
-	define("URL","https://www.example.com");
-}*/
+	define("URL","http://46.100.53.102:28000/blogger");
+}
 //$manager = new MongoDB\Driver\Manager("mongodb://$user:$pass@$host:$port/$dbname");
 $manager = new MongoDB\Driver\Manager("mongodb://$host:$port/$dbname");
 //var_dump($manager);
