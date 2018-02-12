@@ -72,9 +72,7 @@ if(@$_SESSION['admin']){
 	$user = $manager->executeQuery('BloggerDB.users', $query);
 	foreach($user as $ef){
 	}
-	echo $esmfamil = $ef->user_name." ".$ef->user_family;
-	//$famil = $ef->family;
-	//$famil = $admin['xadminfamily'];
+	$esmfamil = $ef->user_name." ".$ef->user_family;
 	$smarty->assign('esmfamil', @$esmfamil);
 	//************************************** 
 }
@@ -135,13 +133,6 @@ if($section=='adm')
 	$smarty->assign('aid', $aid);
 }
 
-$smarty->assign('list', @$list);
-$smarty->assign('listPrimary', @$listPrimary);
-$smarty->assign('listTable', @$listTable);
-$smarty->assign('fieldList', @$fieldList);
-$smarty->assign('adminPage', @$adminPage);
-$smarty->assign('newPage', @$newPage);
-$smarty->assign('default', @$default);
 $smarty->assign('sitename', $firstpage['xsitename']);
 $smarty->assign('recPerPage', $recPerPage);
 $smarty->assign('offset', $offset);
@@ -160,6 +151,13 @@ $smarty->assign('id', @$id);
 $smarty->assign('formid', @$formid);
 $smarty->assign('section', $section);
 $smarty->assign('module', $module);
+$smarty->assign('list', @$list);
+$smarty->assign('listPrimary', @$listPrimary);
+$smarty->assign('listTable', @$listTable);
+$smarty->assign('fieldList', @$fieldList);
+$smarty->assign('adminPage', @$adminPage);
+$smarty->assign('newPage', @$newPage);
+$smarty->assign('default', @$default);
 
 $smarty->assign('href', @$href);
 $smarty->assign('title', @$title[$section][$module]);
