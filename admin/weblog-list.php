@@ -31,7 +31,6 @@ foreach($list['weblogs'] as $key=>$val){
 */
 $fieldList['weblogname']['title']  = 'عنوان وبلاگ';
 $fieldList['webregtime']['title']  = 'زمان ثبت یا آخرین ویرایش';
-// print_r($fieldList); 
 $listPrimary = 'weblogregtime';
 $adminPage = 'adm_weblog-admin';
 
