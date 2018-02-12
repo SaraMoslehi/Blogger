@@ -19,6 +19,22 @@ if($action == 'add' || $action == 'update'){
 //*************************************************
 switch($action){
 	case 'edit':
+		$filter = array('weblogs.weblogregtime' => $id );
+		$options = [
+			'projection' => ['weblogs.weblogname' => 1,'weblogs.weblogregtime' => 1 ,'_id'=>0]
+		];
+		$query = new MongoDB\Driver\Query($filter,$options);     
+		$cursor = $manager->executeQuery("BloggerDB.users", $query);
+		$filteredData = iterator_to_array($cursor);
+		//print_r($filteredData);
+		$weblogs=(reset($filteredData)->weblogs);
+		foreach ($weblogs as $key=>$val)
+		{
+			if($val->weblogregtime==$id) 
+			{
+				$default['weblogname']= $val->weblogname;
+			}
+		};
 		
 	break;
 	case 'del':
